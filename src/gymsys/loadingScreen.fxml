@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXProgressBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="ap" prefHeight="271.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #1A2980, #26D0CE);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gymsys.LoadingScreenController">
+   <children>
+      <JFXProgressBar fx:id="pbar" layoutX="200.0" layoutY="176.0" />
+      <Label layoutX="264.0" layoutY="136.0" text="LOADING" textFill="#fffbfb">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="124.0" layoutY="75.0" text="GYM MANAGEMENT SYSTEM" textFill="#fffbfb">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Line endX="259.0" layoutX="260.0" layoutY="123.0" opacity="0.73" startX="-168.0" stroke="#bfbfbf" strokeMiterLimit="1.0" />
+   </children>
+</AnchorPane>

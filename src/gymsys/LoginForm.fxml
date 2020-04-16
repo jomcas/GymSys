@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="900.0" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #1A2980, #26D0CE);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gymsys.LoginFormController">
+   <children>
+      <AnchorPane layoutX="259.0" layoutY="48.0" prefHeight="476.0" prefWidth="359.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 10px;">
+         <children>
+            <Label layoutX="136.0" layoutY="28.0" text="LOGIN" textFill="#328dfc">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="37.0" layoutY="94.0" text="Username" />
+            <JFXTextField fx:id="usernameTxtField" layoutX="37.0" layoutY="125.0" prefHeight="40.0" prefWidth="285.0" promptText="👤 Type your username">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </JFXTextField>
+            <Label layoutX="37.0" layoutY="184.0" text="Password" />
+            <JFXButton fx:id="loginBtn" layoutX="37.0" layoutY="307.0" onAction="#handleLoginBtn" prefHeight="40.0" prefWidth="285.0" style="-fx-background-radius: 20px; -fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #1A2980, #26D0CE);" text="LOGIN" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="201.0" layoutY="268.0" text="Forget  password?" textFill="#f20000" />
+            <JFXPasswordField fx:id="passwordTxtField" layoutX="37.0" layoutY="212.0" prefHeight="40.0" prefWidth="285.0" promptText="🔒 Type your password" />
+            <Line endX="180.0" layoutX="139.0" layoutY="384.0" opacity="0.73" startX="-100.0" stroke="#bfbfbf" strokeMiterLimit="1.0" />
+            <Label layoutX="92.0" layoutY="397.0" text="Gym Management System" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

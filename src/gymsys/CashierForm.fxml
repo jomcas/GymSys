@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="713.0" prefWidth="1103.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gymsys.CashierFormController">
+   <children>
+      <JFXTabPane layoutX="77.0" layoutY="109.0" prefHeight="552.0" prefWidth="985.0">
+         <tabs>
+            <Tab text="Dashboard">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="948.0" />
+              </content>
+            </Tab>
+            <Tab text="Attendance">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <AnchorPane layoutX="14.0" layoutY="58.0" prefHeight="442.0" prefWidth="379.0" style="-fx-background-color: #FFFFFF;">
+                           <children>
+                              <TableView prefHeight="444.0" prefWidth="491.0">
+                                <columns>
+                                  <TableColumn prefWidth="110.0" text="Customer ID" />
+                                  <TableColumn minWidth="0.0" prefWidth="109.0" text="Last Name" />
+                                    <TableColumn minWidth="0.0" prefWidth="96.0" text="First Name" />
+                                    <TableColumn prefWidth="82.0" text="TIme In" />
+                                    <TableColumn prefWidth="105.0" text="Type " />
+                                </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                        <Label layoutX="25.0" layoutY="9.0" text="Attendance">
+                           <font>
+                              <Font name="System Bold" size="33.0" />
+                           </font>
+                        </Label>
+                        <AnchorPane layoutX="555.0" layoutY="82.0" prefHeight="376.0" prefWidth="379.0" style="-fx-background-color: #FFFFFF;">
+                           <children>
+                              <JFXTextField layoutX="15.0" layoutY="64.0" prefHeight="31.0" prefWidth="350.0" promptText="Customer Number" />
+                              <Label layoutX="10.0" layoutY="8.0" text="Customer login">
+                                 <font>
+                                    <Font name="System Bold" size="33.0" />
+                                 </font>
+                              </Label>
+                              <JFXButton layoutX="14.0" layoutY="114.0" prefHeight="31.0" prefWidth="352.0" text="LOGIN" />
+                              <JFXTextField layoutX="17.0" layoutY="256.0" prefHeight="31.0" prefWidth="350.0" promptText="Customer Number" />
+                              <Label layoutX="12.0" layoutY="200.0" text="Customer logout">
+                                 <font>
+                                    <Font name="System Bold" size="33.0" />
+                                 </font>
+                              </Label>
+                              <JFXButton layoutX="16.0" layoutY="306.0" prefHeight="31.0" prefWidth="352.0" text="LOGOUT" />
+                           </children>
+                        </AnchorPane>
+                        <Label layoutX="732.0" layoutY="14.0" text="Date : March 04, 2020">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="786.0" layoutY="45.0" text="Time : 02:00 PM">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                        </Label>
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Member">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <AnchorPane layoutX="14.0" layoutY="74.0" prefHeight="425.0" prefWidth="399.0" style="-fx-background-color: #FFFFFF;">
+                           <children>
+                              <TableView prefHeight="425.0" prefWidth="399.0">
+                                <columns>
+                                  <TableColumn prefWidth="184.0" text="Member Name" />
+                                  <TableColumn minWidth="0.0" prefWidth="214.0" text="Member Type" />
+                                </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                        <Label layoutX="24.0" layoutY="14.0" text="Member">
+                           <font>
+                              <Font name="System Bold" size="33.0" />
+                           </font>
+                        </Label>
+                        <AnchorPane layoutX="436.0" layoutY="21.0" prefHeight="476.0" prefWidth="533.0" style="-fx-background-color: #FFFFFF;">
+                           <children>
+                              <Label layoutX="124.0" layoutY="14.0" text="Membership Form">
+                                 <font>
+                                    <Font name="System Bold" size="33.0" />
+                                 </font>
+                              </Label>
+                              <JFXTextField layoutX="71.0" layoutY="82.0" text="Last Name" />
+                              <JFXTextField layoutX="296.0" layoutY="82.0" promptText="First Name" />
+                              <JFXTextArea layoutX="70.0" layoutY="129.0" prefHeight="66.0" prefWidth="397.0" promptText="Address" />
+                              <JFXTextField layoutX="71.0" layoutY="217.0" promptText="Contact" />
+                              <JFXComboBox layoutX="268.0" layoutY="217.0" prefHeight="31.0" prefWidth="200.0" promptText="Package Type" />
+                              <JFXDatePicker layoutX="70.0" layoutY="277.0" prefHeight="31.0" prefWidth="176.0" promptText="Validity Start" />
+                              <JFXTextField layoutX="269.0" layoutY="277.0" prefHeight="31.0" prefWidth="200.0" promptText="Initial payment" />
+                              <JFXButton layoutX="64.0" layoutY="375.0" prefHeight="39.0" prefWidth="405.0" text="SUBMIT" />
+                              <JFXCheckBox layoutX="64.0" layoutY="344.0" prefHeight="21.0" prefWidth="174.0" text="Confirm Information" />
+                           </children>
+                        </AnchorPane>
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Payment">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </Tab>
+         </tabs>
+      </JFXTabPane>
+      <JFXButton fx:id="cashierBackBtn" layoutX="77.0" layoutY="58.0" onAction="#handleCashierBackBtn" prefHeight="31.0" prefWidth="122.0" ripplerFill="WHITE" style="-fx-background-color: #328dfc;" text="LOGOUT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></JFXButton>
+      <Label layoutX="963.0" layoutY="26.0" text="Cashier" textFill="#33c3e7">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="790.0" layoutY="58.0" text="Gym Management System">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
